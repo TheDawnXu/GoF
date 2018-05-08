@@ -12,7 +12,7 @@ public abstract class AbstractDisplay {
 
     abstract void end();
 
-    public void template(){
+    public final void template(){
         this.start();
         for (int i = 0; i < 5; i++) {
             this.deal();
