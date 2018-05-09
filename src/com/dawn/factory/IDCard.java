@@ -1,4 +1,4 @@
-package com.dawn.Factory;
+package com.dawn.factory;
 
 /**
  * 注意这个类的构造器并不是public的

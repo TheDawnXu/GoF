@@ -1,4 +1,4 @@
-package com.dawn.Factory;
+package com.dawn.factory;
 
 /**
  * @Author xdc90
