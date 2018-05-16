@@ -1,21 +1,19 @@
 package com.dawn.Prototype;
 
-import java.io.Serializable;
-
 /**
  * @Author xdc90
- * @Date 2018/5/15
+ * @Date 2018/5/16
  */
-public class MessageBox implements Product{
+public class UnderlinePen implements Product {
     private char c;
 
-    public MessageBox(char c) {
+    public UnderlinePen(char c) {
         this.c = c;
     }
 
     @Override
     public void use(String s) {
-        System.out.println(c + " " + s + " " + c);
+        System.out.println(c + " " + s + " " +c);
     }
 
     @Override
@@ -23,7 +21,7 @@ public class MessageBox implements Product{
         try {
             return (Product) this.clone();
         } catch (CloneNotSupportedException e) {
-            System.out.println("复制类失败:" + e.getMessage());
+            e.printStackTrace();
         }
         return null;
     }
